@@ -1,0 +1,17 @@
+{% extends 'style.html'%}
+
+{% block signup%}
+<h2 class="text-center text-info pt-5 pb-5">Sign Up</h2>
+<form method='POST' action = '{% url 'signup'%}'>
+	{% csrf_token %}
+	<div class='pt-5 pb-5'>
+	 <div class='col-md-5 offset-md-4'>
+		
+	{{form.as_p}}
+	<br><br>
+	<button type='submit' class='btn btn-outline-primary btn-block'>Sign Up<button/>
+		
+		<div/>
+	<div/>
+<form/>
+{% endblock signup %}

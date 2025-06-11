@@ -1,0 +1,241 @@
+{% extends 'style.html'%}
+
+{% block doctors %}
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="style/js/tailwindcss.js"></script>
+    <link href="style/css/bootstrap.min.css" rel="stylesheet">
+    <script src="style/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="style/js/popper.min.js"></script>
+    <script src="style/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <p class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight min-w-72">Hello Dr. Marianne</p>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-8 px-4 bg-[#e7edf3] text-[#0e141b] text-sm font-medium leading-normal"
+              >
+                <span class="truncate">Set Availability</span>
+              </button>
+            </div>
+            <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Search for a patient</h3>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <input
+                  placeholder="Search by ID Sensor"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0e141b] focus:outline-0 focus:ring-0 border-none bg-[#e7edf3] focus:border-none h-14 placeholder:text-[#4e7397] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex px-4 py-3">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 flex-1 bg-[#e7edf3] text-[#0e141b] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Search</span>
+              </button>
+            </div>
+            <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Patient information</h3>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2 justify-between">
+              <div class="flex items-center gap-4">
+                <div
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit"
+                  style='background-image: url("static/image/image9.png");'
+                ></div>
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0e141b] text-base font-medium leading-normal line-clamp-1">John Smith</p>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal line-clamp-2">Male, Age 45, 5'11''</p>
+                </div>
+              </div>
+              <div class="shrink-0">
+                <div class="text-[#0e141b] flex size-7 items-center justify-center" data-icon="DotsThree" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Zm56-12a12,12,0,1,0,12,12A12,12,0,0,0,196,116ZM60,116a12,12,0,1,0,12,12A12,12,0,0,0,60,116Z"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12" data-icon="EnvelopeOpen" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M228.44,89.34l-96-64a8,8,0,0,0-8.88,0l-96,64A8,8,0,0,0,24,96V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A8,8,0,0,0,228.44,89.34ZM96.72,152,40,192V111.53Zm16.37,8h29.82l56.63,40H56.46Zm46.19-8L216,111.53V192ZM128,41.61l81.91,54.61-67,47.78H113.11l-67-47.78Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e141b] text-base font-medium leading-normal line-clamp-1">Email</p>
+                <p class="text-[#4e7397] text-sm font-normal leading-normal line-clamp-2">johnsmith@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] py-2">
+              <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12" data-icon="Phone" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path
+                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="text-[#0e141b] text-base font-medium leading-normal line-clamp-1">Phone Number</p>
+                <p class="text-[#4e7397] text-sm font-normal leading-normal line-clamp-2">123-456-7890</p>
+              </div>
+            </div>
+            <h3 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Heart Rate Data</h3>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e7edf3] text-[#0e141b] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Load More</span>
+              </button>
+            </div>
+            <div class="flex flex-col justify-center w-full px-4">
+                <!-- Reports Section -->
+                <div class="space-y-4 w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Report 1 -->
+                        <div class="flex flex-col bg-white p-4 rounded-lg shadow w-full">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12">
+                                    <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12" data-icon="Heart" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                          <path
+                                            d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-[#0e141b] text-base font-medium leading-normal line-clamp-1">Report 1</p>
+                                    <p class="text-[#4e7397] text-sm font-normal leading-normal line-clamp-2">Generated on July 12, 2022</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 mt-4">
+                                <div class="flex px-4 py-3 justify-end">
+                                    <button
+                                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em]"
+                                    >
+                                      <div class="text-slate-50" data-icon="Pen" data-size="20px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                          <path
+                                            d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31l83.67-83.66,3.48,13.9-36.8,36.79a8,8,0,0,0,11.31,11.32l40-40a8,8,0,0,0,2.11-7.6l-6.9-27.61L227.32,96A16,16,0,0,0,227.32,73.37ZM48,179.31,76.69,208H48Zm48,25.38L51.31,160,136,75.31,180.69,120Zm96-96L147.32,64l24-24L216,84.69Z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                      <span class="truncate">Write Report</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+
+                        <!-- Report 2 -->
+                        <div class="flex flex-col bg-white p-4 rounded-lg shadow w-full">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12">
+                                    <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12" data-icon="Heart" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                          <path
+                                            d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-[#0e141b] text-base font-medium leading-normal line-clamp-1">Report 2</p>
+                                    <p class="text-[#4e7397] text-sm font-normal leading-normal line-clamp-2">Generated on July 11, 2022</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 mt-4">
+                                <div class="flex px-4 py-3 justify-end">
+                                    <button
+                                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em]"
+                                    >
+                                      <div class="text-slate-50" data-icon="Pen" data-size="20px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                          <path
+                                            d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31l83.67-83.66,3.48,13.9-36.8,36.79a8,8,0,0,0,11.31,11.32l40-40a8,8,0,0,0,2.11-7.6l-6.9-27.61L227.32,96A16,16,0,0,0,227.32,73.37ZM48,179.31,76.69,208H48Zm48,25.38L51.31,160,136,75.31,180.69,120Zm96-96L147.32,64l24-24L216,84.69Z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                      <span class="truncate">Write Report</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                        <!-- Report 3 -->
+                        <div class="flex flex-col bg-white p-4 rounded-lg shadow w-full">
+                            <div class="flex items-center gap-4">
+                                <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12">
+                                    <div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-12" data-icon="Heart" data-size="24px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                          <path
+                                            d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-[#0e141b] text-base font-medium leading-normal line-clamp-1">Report 2</p>
+                                    <p class="text-[#4e7397] text-sm font-normal leading-normal line-clamp-2">Generated on July 11, 2022</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 mt-4">
+                                <div class="flex px-4 py-3 justify-end">
+                                    <button
+                                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 gap-2 pl-4 text-sm font-bold leading-normal tracking-[0.015em]"
+                                    >
+                                      <div class="text-slate-50" data-icon="Pen" data-size="20px" data-weight="regular">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                                          <path
+                                            d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H92.69A15.86,15.86,0,0,0,104,219.31l83.67-83.66,3.48,13.9-36.8,36.79a8,8,0,0,0,11.31,11.32l40-40a8,8,0,0,0,2.11-7.6l-6.9-27.61L227.32,96A16,16,0,0,0,227.32,73.37ZM48,179.31,76.69,208H48Zm48,25.38L51.31,160,136,75.31,180.69,120Zm96-96L147.32,64l24-24L216,84.69Z"
+                                          ></path>
+                                        </svg>
+                                      </div>
+                                      <span class="truncate">Write Report</span>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example" class="mt-4">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}

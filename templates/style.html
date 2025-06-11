@@ -1,0 +1,82 @@
+{% load static %}
+{% load humanize %}
+{% csrf_token %}
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+<script src="{% static 'JS/tailwindcss.js'%}"></script>
+<script src="{% static 'JS/jquery-3.5.1.slim.min.js'%}"></script>
+<script src="{% static 'JS/popper.min.js'%}"></script>
+<script src="{% static 'JS/bootstrap.min.js'%}"></script>
+
+<img src="{% static 'image/11.png'%}" alt=""> 
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="style/js/tailwindcss.js"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] px-10 py-3" style="background-color: rgb(193, 215, 245);">
+          <div class="flex items-center gap-4 text-[#0e141b]">
+            <div class="size-4">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em]">Pulse of Life</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="{% url 'home'%}">Home</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="{% url 'doctors'%}">Doctors</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="{% url 'profil'%}">Profile</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="{% url 'show_reports'%}">Show Reports</a>
+              <a class="text-[#0e141b] text-sm font-medium leading-normal" href="{% url 'patients'%}">Patients</a>
+            </div>
+            {% if user.is_authenticated %}
+            <a href="{% url 'logout'%}"><button type="button" class="btn btn-outline-secondary" >Log Out</button></a>
+            {% else %}
+            <a href="{% url 'signup'%}"><button type="button" class="btn btn-outline-success" >Sign Up</button></a>
+            <a href="{% url 'login'%}"><button type="button" class="btn btn-outline-primary">Log In</button></a>
+            {% endif %}
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#e7edf3] text-[#0e141b] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+            >
+              <div class="text-[#0e141b]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </header>
+       
+{% block home %}
+{% endblock home %}
+
+
+{%block login %}
+{% endblock login %}
+
+{% block navbar%}
+{% endblock navbar %}
+
+{% block signup%}
+{% endblock signup%}
+{% block doctors %}
+{% endblock %}
+{% block show_reports %}
+{% endblock %}
+{% block patients %}
+{% endblock %}
+{% block profile %}
+{% endblock %}

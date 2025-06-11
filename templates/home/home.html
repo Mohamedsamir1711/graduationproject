@@ -1,0 +1,240 @@
+{% extends 'style.html'%}
+{% block home %}
+<html>
+  {%if messages %}
+  {%for message in messages %}
+  <div class="alert alert-success" role="alert">
+    {{ message }}
+  </div>
+  {% endfor %}
+  {% endif %}
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("static/image/image11.png");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Pulse of Life
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      We are committed to providing the best medical care for you. We believe that every patient is unique and deserves personalized medical care.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Make an appointment</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our services</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Heartbeat" data-size="24px" data-weight="regular">
+                  <!-- ----------------------------------------------------------------------------------------------------------- -->
+                  <!-- ///////////////////////////////////////////icon 1////////////////////////////////////////  -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M72,136H32a8,8,0,0,1,0-16H67.72L81.34,99.56a8,8,0,0,1,13.32,0l25.34,38,9.34-14A8,8,0,0,1,136,120h24a8,8,0,0,1,0,16H140.28l-13.62,20.44a8,8,0,0,1-13.32,0L88,118.42l-9.34,14A8,8,0,0,1,72,136ZM178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,.75,0,1.5,0,2.25a8,8,0,1,0,16-.5c0-.58,0-1.17,0-1.75A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46c0,53.61-77.76,102.15-96,112.8-10.83-6.31-42.63-26-66.68-52.21a8,8,0,1,0-11.8,10.82c31.17,34,72.93,56.68,74.69,57.63a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32Z"
+                    ></path>
+                  </svg>
+                  <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight">Cardiology</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Diagnosis and treatment of heart disease</p>
+                </div>
+              </div>
+              <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+              <!-- --------------------------------------------------------------------------------------------------------------- -->
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Pill" data-size="24px" data-weight="regular">
+                  <!-- ////////////////////////////////////////////////icon2/////////////////////////////////////////////////////// -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216.42,39.6a53.26,53.26,0,0,0-75.32,0L39.6,141.09a53.26,53.26,0,0,0,75.32,75.31h0L216.43,114.91A53.31,53.31,0,0,0,216.42,39.6ZM103.61,205.09h0a37.26,37.26,0,0,1-52.7-52.69L96,107.31,148.7,160ZM205.11,103.6,160,148.69,107.32,96l45.1-45.09a37.26,37.26,0,0,1,52.69,52.69ZM189.68,82.34a8,8,0,0,1,0,11.32l-24,24a8,8,0,1,1-11.31-11.32l24-24A8,8,0,0,1,189.68,82.34Z"
+                    ></path>
+                  </svg>
+                  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight">Real-time Heart Rate Monitoring</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Patients can continuously track their heart rate in real-time, allowing them to stay informed about their heart health.</p>
+                </div>
+              </div>
+              <!-- ----------------------------------------------------------------------------------------------------------------- -->
+
+              <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="FirstAid" data-size="24px" data-weight="regular">
+                  <!-- //////////////////////////////////////////icon3///////////////////////////////////////////////////////////////////// -->
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight">Automated Alerts & Notifications</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Instant alerts can be sent to both patients and doctors if the heart rate exceeds or drops below normal levels, helping in early detection of potential issues.</p>
+                </div>
+              </div>
+              <!-- --------------------------------------------------------------------------------------------------------------------- -->
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Syringe" data-size="24px" data-weight="regular">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight"> Historical Data & Trends Analysis</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Patients can view historical heart rate data and trends over days, weeks, or months to monitor long-term heart health.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Stethoscope" data-size="24px" data-weight="regular">
+                  <i class="fa-solid fa-notes-medical"></i>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight">AI-Based Health Insights & Recommendations</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Using AI, the system can analyze heart rate patterns and provide personalized recommendations for improving heart health.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Scissors" data-size="24px" data-weight="regular">
+                  <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight"> Doctor's Dashboard & Remote Consultation</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Doctors can access patient data remotely, allowing them to monitor multiple patients and provide virtual consultations based on real-time and historical heart rate data.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Person" data-size="24px" data-weight="regular">
+                  <i class="fa-solid fa-truck-medical"></i>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight"> Emergency Response Integration</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">In case of abnormal heart rate patterns, the system can automatically notify emergency contacts or healthcare providers to take immediate action.</p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="BeerBottle" data-size="24px" data-weight="regular">
+                  <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight"> Medication & Lifestyle Reminders</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">Patients can receive reminders for medications, exercise, and lifestyle changes based on their heart rate trends.
+                     </p>
+                </div>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#d0dbe7] bg-slate-50 p-4 flex-col">
+                <div class="text-[#0e141b]" data-icon="Pill" data-size="24px" data-weight="regular">
+                  <!-- ////////////////////////////////////////////////icon2/////////////////////////////////////////////////////// -->
+                  <i class="fa-solid fa-headset"></i>
+                  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                </div>
+                <div class="flex flex-col gap-1">
+                  <h2 class="text-[#0e141b] text-base font-bold leading-tight"> Technical Support</h2>
+                  <p class="text-[#4e7397] text-sm font-normal leading-normal">A dedicated support team is available around the clock to assist patients and healthcare providers with any technical issues, ensuring seamless operation of the heart rate monitoring system.</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-[#0e141b] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our doctors</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-8">
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-52 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("static/image/image9.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Dr. John Smith</p>
+                    <p class="text-[#4e7397] text-sm font-normal leading-normal">Cardiologist</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-52 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("static/image/image12.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Dr. Emily Johnson</p>
+                    <p class="text-[#4e7397] text-sm font-normal leading-normal">Pediatrician</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-52 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("static/image/13.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Dr. Robert Brown</p>
+                    <p class="text-[#4e7397] text-sm font-normal leading-normal">Family Physician</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-52 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("static/image/image14.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Dr. Sarah Davis</p>
+                    <p class="text-[#4e7397] text-sm font-normal leading-normal">Obstetrician</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-52 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("static/image/image15.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Dr. Michael Wilson</p>
+                    <p class="text-[#4e7397] text-sm font-normal leading-normal">Surgeon</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 text-center rounded-lg min-w-52 pt-4">
+                  <div
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full flex flex-col self-center w-full"
+                    style='background-image: url("static/image/image16.png");'
+                  ></div>
+                  <div>
+                    <p class="text-[#0e141b] text-base font-medium leading-normal">Dr. Jessica Taylor</p>
+                    <p class="text-[#4e7397] text-sm font-normal leading-normal">Internist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="@container">
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class="text-[#0e141b] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                  >
+                    We are here to help you
+                  </h1>
+                  <p class="text-[#0e141b] text-base font-normal leading-normal max-w-[720px">
+                    We provide comprehensive medical services for patients of all ages. Contact us today to schedule an appointment.
+                  </p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1980e6] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                    >
+                      <span class="truncate">View all doctors</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+{% endblock home %}
